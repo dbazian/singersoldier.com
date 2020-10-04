@@ -1,0 +1,216 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* whole page */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+/* Title */
+
+#firstBlock {
+    background-image: url("Singer Soldier Website Header.jpg");
+    height: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6.1vw;
+    color: black;
+    font-family: "Playfair Display", "sans-serif";
+    margin-top: auto;
+    padding-top: .1em;
+    margin-left: 2em;
+    text-shadow: 1em 1em rgb(106, 116, 122), 2em 2em white;
+}
+
+/* about us */
+
+#aboutus {
+    margin: -1em 4em 5.3em 4em;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display", "sans-serif";
+    font-size: 2em;
+}
+
+/* Spotify Playlists */
+
+#spotify {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.spotifyContainer {
+    display: inline-block;
+}
+
+.spotifyContainer iframe {
+    width: 25rem;
+    height: 30rem;
+}
+/* review heading */
+
+.headingContainer {
+    width: 100%;
+    background-color: gray;
+    height: 8em;
+    display: flex;
+}
+
+.heading {
+    font-size: 4em;
+    font-family: "Playfair Display", "sans-serif";
+    margin: auto;
+}
+
+/* reviews */
+
+#reviewContainer {
+    margin-top: -2em;
+    background-color: white;
+    height: auto;
+    color: black;
+    padding-bottom: 4em;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "Playfair Display", "sans-serif";
+    letter-spacing: .05em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+p {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 1.5em;
+    font-family: "EB Garamond", "sans-serif"; 
+    color: rgb(35, 38, 41);
+}    
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    font-size: 1.5em;
+}
+
+/* links */
+
+#linkContainer {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    
+}
+
+#links h3 {
+    color: white;
+    font-size: 3em;
+}
+
+a {
+    color: white;
+    font-family: "EB Garamond", "sans-serif"; 
+}
+
+/* link pictures */
+
+.icons {
+    padding-top: 3em;
+    display: block;
+    padding-bottom: 1em;
+    margin: 0;
+    
+}
+
+#fbook {
+    width: 4em;
+    height: auto;
+    margin-right: .5em;
+}
+
+#ytube {
+    width: 4em;
+    height: auto;
+    margin-right: .5em;
+}
+
+#apple {
+    width: 4em;
+    height: auto;
+    margin-right: .5em;
+}
+
+#spotifyimage {
+    width: 4em;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* footer */
+
+#footer  {
+    color: white;
+    text-align: center;
+    background-color: gray;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    padding: .5em;
+}
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) {
+      h1 { font-size: 5.5vw; }
+      h3 { font-size: 5em;}
+      h4 { font-size: 4em; }
+      #aboutUs { margin: 0; }
+      .headingContainer { height: 20em; }
+      .heading { font-size: 5em; }
+      p { font-size: 4em;
+          margin-left: 0;
+          margin-right: 0; 
+          text-align: center; }
+       #reviewContainer { margin-top: -5em;}
+       #linkContainer { height: auto; }
+       .icons { height: 55px;
+          padding-bottom: 20px;}
+       #fbook { width: 9em; }
+       #ytube { width: 9em; }
+       #apple { width: 9em; }
+       #spotifyimage { width: 9em; }
+       #footer {font-size: 4em;}
+       .spotifyContainer { display: none;}
+       }
